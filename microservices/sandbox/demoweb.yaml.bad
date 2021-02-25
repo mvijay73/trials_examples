@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demoweb
+spec:
+  selector:
+    matchLabels:
+      app: demoweb
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: demoweb
+    spec:
+      containers:
+      - name: pyweb
+        image: mvijay/pyweb:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000

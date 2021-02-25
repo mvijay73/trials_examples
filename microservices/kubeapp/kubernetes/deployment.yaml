@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubeapp-service
+spec:
+  selector:
+    app: kubeapp
+  ports:
+  - protocol: "TCP"
+    port: 6000
+    targetPort: 5000
+  type: LoadBalancer
+
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubeapp
+spec:
+  selector:
+    matchLabels:
+      app: kubeapp   
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kubeapp
+    spec:
+      containers:
+      - name: kubeapp
+        image: kubeapp:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000

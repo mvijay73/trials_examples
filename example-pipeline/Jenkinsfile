@@ -1,0 +1,34 @@
+#!/usr/bin/env groovy
+pipeline {
+    //agent none
+    agent {
+        docker {  image 'python:2-alpine' }
+    } 
+    stages {
+        stage('testenv') { 
+            steps {
+                sh 'python --version'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'python -m py_compile src/main.py src/sum.py' 
+                stash(name: 'compiled-results', includes: 'src/*.py*')
+            }
+        }
+        stage('test-app') {
+            steps {
+                sh 'python src/test_sum.py'
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'python ENV is ready'
+                sh 'python --version'
+                sh 'echo ${PWD}'
+                sh 'ls -la'
+                echo 'To SSH use: docker run -it mvijay/example-pipeline /bin/bash'
+            }
+        }
+    }
+}

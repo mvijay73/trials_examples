@@ -1,0 +1,16 @@
+{
+    "python.pythonPath": "/usr/local/Cellar/python@3.9/3.9.2/Frameworks/Python.framework/Versions/3.9/bin/python3.9",
+    "editor.tabSize": 2,
+    "editor.cursorStyle": "block",
+    "files.exclude": {
+        "__init__": true,
+        "*.pyc": true,
+        "*sqlite*": true,
+        "env/": true
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "diffEditor.codeLens": true,
+    "editor.fontSize": 15
+}

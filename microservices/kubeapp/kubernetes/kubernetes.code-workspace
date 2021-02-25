@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {},
+	"launch": {
+		"configurations": [
+			{
+				"type": "aws-sam",
+				"request": "direct-invoke",
+				"name": "kubeapp:main.hello (python2.7)",
+				"invokeTarget": {
+					"target": "code",
+					"projectRoot": "app",
+					"lambdaHandler": "main.hello"
+				},
+				"lambda": {
+					"runtime": "python2.7",
+					"payload": {},
+					"environmentVariables": {}
+				}
+			}
+		]
+	}
+}

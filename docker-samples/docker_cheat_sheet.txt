@@ -1,0 +1,136 @@
+ping sid_vijay
+ping sid
+ping -a sid
+ping 192.168.1.205
+ssh sysadmin@192.168.1.205
+sysctl kern.hv_support
+ ls -lrt
+ docker version
+ docker
+ ruby
+ brew
+ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+ git
+ brew
+ brew cask install docker
+ brew --cask install docker
+ brew cask install docker
+ docker version
+ brew config
+ git
+ brew install --cask
+ brew install --cask docker
+ curl -X GET https://desktop.docker.com/mac/stable/26764/Docker.dmg
+ curl -X GET http://desktop.docker.com/mac/stable/26764/Docker.dmg
+ clear
+ brew cask install docker
+ which git
+ brew install --build-from-source git
+ curl -X GET Download failed: https://mirrors.edge.kernel.org/pub/software/scm/git/git-htmldocs-2.30.0.tar.xz
+ curl -X GET https://mirrors.edge.kernel.org/pub/software/scm/git/git-htmldocs-2.30.0.tar.xz
+curl -k -X GET https://mirrors.edge.kernel.org/pub/software/scm/git/git-htmldocs-2.30.0.tar.xz > git
+1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c
+ brew install --build-from-source git
+ ls -lrt
+ ls -l /tmp
+ ls -l /tmp /private/tmp/
+ brew install docker
+ brew doctor
+ brew install git
+ brew cleanup
+ brew doctor
+ git -v
+ git --version
+ brew install git
+ sudo brew install git
+ brew install git
+ brew --help
+ brew update
+ brew install --verbose git
+ which git
+ brew install docker
+ brew install --build-from-source docker
+ echo $?
+ brew install docker
+ which docker
+ docker --version
+ docker list
+ docker ps -a
+ sudo docker ps -a
+ docker login
+ sudo docker ps -a
+ ps -ef | grep docker
+ sudo systemctl status dockerd
+ brew install docker-machine
+ git --version
+ which git
+ sudo su -
+ brew install docker-machine
+ brew install --build-from-sourcedocker-machine
+ brew install --build-from-source docker-machine
+ echo $?
+ docker-machine version
+ dockver version
+ clear
+ brew services docker-machine start
+ brew services startdocker-machinet
+ brew services start docker-machine
+ ps -ef | grep docker
+ docker version
+ docker ps -a
+ brew services start docker-machine
+ ps -ef | docker
+ ps -ef | grep docker
+ brew services stop docker-machine
+ brew services start docker-machine
+ ps -ef | grep homebrew
+ brew services stop docker-machine
+ docker-machine create --driver virtualbox default
+ docker-machine env default
+ eval $(docker-machine env default)
+ docker login
+ docker ps -a
+ docker images ls -a
+ ls -slrt
+ pwdd
+ pwd
+mkdir workspace
+cd workspace/
+docker ps -a
+docker ps
+docker pull mvijay/hello
+docker ps 
+docker ps -a
+docker runn mvijay/hello
+docker run mvijay/hello
+docker ps -a
+docker images
+pwd
+ls -la
+pwd
+git clone https://github.com/mvijay73/docker-samples.git
+git clone https://github.com/mvijay73/docker-samples.git
+git clone https://github.com/mvijay73/IaaS.git
+ls -la
+git status
+cd IaaS/
+git status
+git config crenmditial.helper store
+git pull
+git push
+history
+history | cut -d"  " -f2-
+history | cut -d' ' -f2-
+history | cut -d'  ' -f2-
+history | cut -d' ' -f2-
+history | cut -d' ' -f3
+history | cut -d' ' -f4
+history | cut -d' ' -f5
+history | cut -d' ' -f5-
+history | cut -d' ' -f5- > docker_cheat_sheet.txt
+docker-machine create --driver virtualbox default
+eval $(docker-machine env default)
+docker ps -a
+docker images
+docker images -a
+
