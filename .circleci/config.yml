@@ -12,8 +12,8 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ./pipeline/src/main.py 
-          name: sum
+          command: ./hello.py
+          name: hello
 
 workflows:
   main:
